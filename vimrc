@@ -142,3 +142,9 @@ if has("win32") || has("win16")
 endif
 
 let g:signify_vcs_list = [ 'git', 'hg' ]
+
+" quick directory change
+nnoremap <leader>cd :cd %:p:h<CR>
+
+" clang
+let g:clang_library_path="/usr/lib/llvm-3.4/lib/"
