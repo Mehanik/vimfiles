@@ -141,10 +141,35 @@ if has("win32") || has("win16")
   set noswapfile
 endif
 
-let g:signify_vcs_list = [ 'git', 'hg' ]
+let g:signify_vcs_list = ['hg', 'git']
+let g:signify_update_on_bufenter = 0
 
 " quick directory change
 nnoremap <leader>cd :cd %:p:h<CR>
 
 " clang
 let g:clang_library_path="/usr/lib/llvm-3.4/lib/"
+
+" Easy-align
+let g:easy_align_delimiters = {
+      \ '>': { 'pattern': '>>\|=>\|>' },
+      \ '/': { 'pattern': '//\+\|/\*\|\*/', 'ignore_groups': ['String'], 'ignore_unmatched': 0 },
+      \ '#': { 'pattern': '#\+', 'ignore_groups': ['String'], 'delimiter_align': 'l', 'ignore_unmatched': 0 },
+      \ ']': {
+      \     'pattern':       '[[\]]',
+      \     'left_margin':   0,
+      \     'right_margin':  0,
+      \     'stick_to_left': 0
+      \   },
+      \ ')': {
+      \     'pattern':       '[()]',
+      \     'left_margin':   0,
+      \     'right_margin':  0,
+      \     'stick_to_left': 0
+      \   },
+      \ 'd': {
+      \     'pattern': ' \(\S\+\s*[;=]\)\@=',
+      \     'left_margin': 0,
+      \     'right_margin': 0
+      \   }
+      \ }
