@@ -173,3 +173,6 @@ let g:easy_align_delimiters = {
       \     'right_margin': 0
       \   }
       \ }
+
+" Enable matchit macros
+runtime macros/matchit.vim
