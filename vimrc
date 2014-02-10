@@ -148,7 +148,13 @@ let g:signify_update_on_bufenter = 0
 nnoremap <leader>cd :cd %:p:h<CR>
 
 " clang
-let g:clang_library_path="/usr/lib/llvm-3.4/lib/"
+let g:clang_library_path = "/usr/lib/llvm-3.4/lib/"
+let g:clang_snippets = 0
+let g:clang_complete_auto = 0
+let g:clang_complete_macros = 1
+let g:clang_complete_macros = 1
+let g:clang_close_preview = 1
+inoremap <C-Space> <C-x><C-o>
 
 " Easy-align
 let g:easy_align_delimiters = {
@@ -176,3 +182,6 @@ let g:easy_align_delimiters = {
 
 " Enable matchit macros
 runtime macros/matchit.vim
+
+" Completion
+set completeopt=longest,menuone,preview
