@@ -34,3 +34,6 @@
 [submodule "bundle/vim-easy-align"]
 	path = bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "bundle/systemverilog.vim"]
+	path = bundle/systemverilog.vim
+	url = git://github.com/nachumk/systemverilog.vim
