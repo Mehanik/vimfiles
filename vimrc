@@ -12,6 +12,9 @@ set ruler		" show the cursor position all the time
 set nomodeline
 
 execute pathogen#infect()
+"
+" Enable matchit macros
+runtime macros/matchit.vim
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
@@ -95,12 +98,16 @@ endif
 "endif
 
 " Arduino Syntax highlighting
-au BufRead,BufNewFile *.pde set filetype=arduino
-au BufRead,BufNewFile *.ino set filetype=arduino
+augroup filetypedetect
+  au BufRead,BufNewFile *.pde set filetype=arduino
+  au BufRead,BufNewFile *.ino set filetype=arduino
+augroup END
 
 " SPICE Syntax highlighting
-au BufRead,BufNewFile *.cir set filetype=spice
-au BufRead,BufNewFile *.mod set filetype=spice
+augroup filetypedetect
+  au BufRead,BufNewFile *.cir set filetype=spice
+  au BufRead,BufNewFile *.mod set filetype=spice
+augroup END
 
 if has("win32") || has("win16")
   set encoding=utf-8
@@ -127,6 +134,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:jedi#show_call_signatures=0
 let g:jedi#popup_on_dot=0
 let g:jedi#popup_select_first=0
+let g:jedi#force_py_version=3
 
 " Always show statusline
 if has("gui_running")
@@ -180,8 +188,13 @@ let g:easy_align_delimiters = {
       \   }
       \ }
 
-" Enable matchit macros
-runtime macros/matchit.vim
-
 " Completion
 set completeopt=longest,menuone,preview
+
+" Start interactive EasyAlign with a Vim movement
+vmap <Leader>a <Plug>(EasyAlign)
+
+" Start interactive EasyAlign with a Vim movement
+nmap <Leader>a <Plug>(EasyAlign)
+
+"au FileType python setl shiftwidth=2 tabstop=2
