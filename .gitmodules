@@ -37,3 +37,6 @@
 [submodule "bundle/systemverilog.vim"]
 	path = bundle/systemverilog.vim
 	url = git://github.com/nachumk/systemverilog.vim
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
