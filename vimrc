@@ -60,9 +60,9 @@ set cindent
 set expandtab
 set smarttab
 set shiftround
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
@@ -130,12 +130,6 @@ let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup = 1
 
-" Jedi-vim options
-let g:jedi#show_call_signatures=0
-let g:jedi#popup_on_dot=0
-let g:jedi#popup_select_first=0
-let g:jedi#force_py_version=3
-
 " Always show statusline
 if has("gui_running")
   let g:airline_powerline_fonts = 1
@@ -154,15 +148,6 @@ let g:signify_update_on_bufenter = 0
 
 " quick directory change
 nnoremap <leader>cd :cd %:p:h<CR>
-
-" clang
-let g:clang_library_path = "/usr/lib/llvm-3.4/lib/"
-let g:clang_snippets = 0
-let g:clang_complete_auto = 0
-let g:clang_complete_macros = 1
-let g:clang_complete_macros = 1
-let g:clang_close_preview = 1
-inoremap <C-Space> <C-x><C-o>
 
 " Easy-align
 let g:easy_align_delimiters = {
@@ -187,9 +172,6 @@ let g:easy_align_delimiters = {
       \     'right_margin': 0
       \   }
       \ }
-
-" Completion
-set completeopt=longest,menuone,preview
 
 " Start interactive EasyAlign with a Vim movement
 vmap <Leader>a <Plug>(EasyAlign)

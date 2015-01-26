@@ -7,7 +7,7 @@ set go-=L " Removes left hand scroll bar
 if has("win32") || has("win16")
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cDEFAULT
 else
- set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
 
 highlight SignColumn guibg=#000000
