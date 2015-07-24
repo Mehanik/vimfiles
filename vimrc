@@ -60,9 +60,9 @@ set cindent
 set expandtab
 set smarttab
 set shiftround
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
