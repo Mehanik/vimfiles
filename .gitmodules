@@ -49,3 +49,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "bundle/cpp-syntax"]
+	path = bundle/cpp-syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
