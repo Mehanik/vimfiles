@@ -52,3 +52,6 @@
 [submodule "bundle/cpp-syntax"]
 	path = bundle/cpp-syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/CamelCaseMotion"]
+	path = bundle/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion.git

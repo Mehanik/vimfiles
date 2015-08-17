@@ -57,7 +57,7 @@ nnoremap <leader><space> :noh<cr>
 "set cursorline " highlight current line
 set smartindent
 set cindent
-set cinoptions=g1,h1,N-s
+set cinoptions=g1,h1,N-s,(0,W2
 set expandtab
 set smarttab
 set shiftround
@@ -188,7 +188,7 @@ let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
 
 " Unisnip
 let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"                                           
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Completion menu options
