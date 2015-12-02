@@ -57,7 +57,7 @@ nnoremap <leader><space> :noh<cr>
 "set cursorline " highlight current line
 set smartindent
 set cindent
-set cinoptions=g1,h1,N-s,(0,W2
+set cinoptions=g1,h1,N-s,(0,W4,l1
 set expandtab
 set smarttab
 set shiftround
