@@ -197,3 +197,6 @@ set completeopt=longest,menuone
 " wildmenu
 set wildmenu
 set wildmode=list:longest,full
+
+"CamelCaseMotion
+call camelcasemotion#CreateMotionMappings('<leader>')
