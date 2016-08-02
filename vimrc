@@ -200,3 +200,8 @@ set wildmode=list:longest,full
 
 "CamelCaseMotion
 call camelcasemotion#CreateMotionMappings('<leader>')
+
+"vim-session
+let g:session_autosave = 'yes'
+let g:session_autoload = 'yes'
+set sessionoptions+=resize,winpos
