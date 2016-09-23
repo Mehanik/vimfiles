@@ -144,9 +144,6 @@ if has("win32") || has("win16")
   set noswapfile
 endif
 
-let g:signify_vcs_list = ['hg', 'git']
-let g:signify_update_on_bufenter = 0
-
 " quick directory change
 nnoremap <leader>cd :cd %:p:h<CR>
 
@@ -205,3 +202,6 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 set sessionoptions+=resize,winpos
+
+" Automatically removing all trailing whitespace
+ autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
