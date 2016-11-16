@@ -72,7 +72,7 @@ if has("autocmd")
 endif
 
 set nu!
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
 set helplang=ru
 
 "set autochdir " always switch to the current file directory
@@ -80,6 +80,9 @@ set hidden " you can change buffers without saving
 "set autowrite		" Automatically save before commands like :next and :make
 "set visualbell
 "au FocusLost * :wa
+"
+set t_Co=256
+color wombat256
 
 if exists('+colorcolumn')
   set colorcolumn=80
@@ -92,11 +95,6 @@ if !has("gui_running")
   hi PmenuSbar  ctermbg=Cyan    guibg=Cyan
   hi PmenuThumb ctermfg=White   guifg=White
 endif
-
-"if $COLORTERM == 'gnome-terminal'
-"set t_Co=256
-"color wombat256
-"endif
 
 " Arduino Syntax highlighting
 augroup filetypedetect
@@ -180,8 +178,9 @@ nmap <Leader>a <Plug>(EasyAlign)
 "au FileType python setl shiftwidth=2 tabstop=2
 
 " YCM
-let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+let g:ycm_key_list_select_completion=['<C-n>']
+let g:ycm_key_list_previous_completion=['<C-p>']
+nnoremap <C-]> :YcmCompleter GoTo<CR>
 
 " Unisnip
 let g:UltiSnipsExpandTrigger="<Tab>"
@@ -205,3 +204,9 @@ set sessionoptions+=resize,winpos
 
 " Automatically removing all trailing whitespace
  autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+
+" GitGutter
+let g:gitgutter_sign_column_always = 1
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
+set updatetime=250
