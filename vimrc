@@ -181,6 +181,7 @@ nmap <Leader>a <Plug>(EasyAlign)
 let g:ycm_key_list_select_completion=['<C-n>']
 let g:ycm_key_list_previous_completion=['<C-p>']
 nnoremap <C-]> :YcmCompleter GoTo<CR>
+let g:ycm_extra_conf_globlist=['C:\eugene\splitted_projects\*']
 
 " Unisnip
 let g:UltiSnipsExpandTrigger="<Tab>"
