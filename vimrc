@@ -177,19 +177,6 @@ nmap <Leader>a <Plug>(EasyAlign)
 
 "au FileType python setl shiftwidth=2 tabstop=2
 
-" YCM
-let g:ycm_key_list_select_completion=['<C-n>']
-let g:ycm_key_list_previous_completion=['<C-p>']
-nnoremap <C-]> :YcmCompleter GoTo<CR>
-let g:ycm_extra_conf_globlist=['C:\eugene\splitted_projects\*']
-let g:ycm_min_num_of_chars_for_completion=2
-let g:ycm_show_diagnostics_ui=1
-let g:ycm_enable_diagnostic_signs=0
-let g:ycm_add_preview_to_completeopt=1
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_auto_trigger=1
-let g:ycm_max_diagnostics_to_display = 300
-
 " Unisnip
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
