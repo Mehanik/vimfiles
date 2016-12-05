@@ -73,7 +73,7 @@ endif
 
 set nu!
 "set ofu=syntaxcomplete#Complete
-set helplang=ru
+set helplang=en
 
 "set autochdir " always switch to the current file directory
 set hidden " you can change buffers without saving
@@ -117,7 +117,7 @@ if has("win32") || has("win16")
 
   " Отображение кириллицы в меню
   source $VIMRUNTIME/delmenu.vim
-  set langmenu=ru_RU.UTF-8
+  set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
   source $VIMRUNTIME/menu.vim
 endif
 
@@ -182,6 +182,13 @@ let g:ycm_key_list_select_completion=['<C-n>']
 let g:ycm_key_list_previous_completion=['<C-p>']
 nnoremap <C-]> :YcmCompleter GoTo<CR>
 let g:ycm_extra_conf_globlist=['C:\eugene\splitted_projects\*']
+let g:ycm_min_num_of_chars_for_completion=2
+let g:ycm_show_diagnostics_ui=1
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_add_preview_to_completeopt=1
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_auto_trigger=1
+let g:ycm_max_diagnostics_to_display = 300
 
 " Unisnip
 let g:UltiSnipsExpandTrigger="<Tab>"
@@ -211,3 +218,6 @@ let g:gitgutter_sign_column_always = 1
 let g:gitgutter_realtime = 1
 let g:gitgutter_eager = 1
 set updatetime=250
+
+" Disable automatically commetn insertion
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
