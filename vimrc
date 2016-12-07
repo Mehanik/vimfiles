@@ -208,3 +208,4 @@ set updatetime=250
 
 " Disable automatically commetn insertion
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
