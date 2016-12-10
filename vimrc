@@ -198,7 +198,7 @@ let g:session_autoload = 'yes'
 set sessionoptions+=resize,winpos
 
 " Automatically removing all trailing whitespace
- autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+ autocmd FileType c,cpp,java,php,arduino autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " GitGutter
 let g:gitgutter_sign_column_always = 1
