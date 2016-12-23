@@ -81,19 +81,21 @@ set hidden " you can change buffers without saving
 "set visualbell
 "au FocusLost * :wa
 "
-set t_Co=256
-color wombat256
-
-if exists('+colorcolumn')
-  set colorcolumn=80
-  highlight ColorColumn ctermbg=0
-endif
 
 if !has("gui_running")
+  set t_Co=256
+  color wombat256
   hi Pmenu      ctermfg=10 ctermbg=Darkgray cterm=None
   hi PmenuSel   ctermfg=White   ctermbg=Darkgray cterm=Bold
   hi PmenuSbar  ctermbg=Cyan    guibg=Cyan
   hi PmenuThumb ctermfg=White   guifg=White
+else
+  color wombat
+endif
+
+if exists('+colorcolumn')
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=0
 endif
 
 " Arduino Syntax highlighting
