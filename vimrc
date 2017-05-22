@@ -61,9 +61,9 @@ set cinoptions=g1,h1,N-s,(0,W4,l1
 set expandtab
 set smarttab
 set shiftround
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
@@ -200,7 +200,7 @@ let g:session_autoload = 'yes'
 set sessionoptions+=resize,winpos
 
 " Automatically removing all trailing whitespace
- autocmd FileType c,cpp,java,php,arduino autocmd BufWritePre <buffer> %s/\s\+$//e
+ autocmd FileType c,cpp,java,php,arduino,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " GitGutter
 let g:gitgutter_sign_column_always = 1

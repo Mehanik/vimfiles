@@ -5,8 +5,10 @@ set go-=L " Removes left hand scroll bar
 ":set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
 if has("win32") || has("win16")
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h9:cDEFAULT
+elseif has("mac") || has("macunix")
+  set guifont=Monaco\ for\ Powerline:h11
 else
- set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
 
 highlight SignColumn guibg=#000000
