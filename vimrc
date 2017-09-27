@@ -200,10 +200,10 @@ let g:session_autoload = 'yes'
 set sessionoptions+=resize,winpos
 
 " Automatically removing all trailing whitespace
- autocmd FileType c,cpp,java,php,arduino,python autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,java,php,arduino,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " GitGutter
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 let g:gitgutter_realtime = 1
 let g:gitgutter_eager = 1
 set updatetime=250
@@ -215,3 +215,6 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_simple_template_highlight = 1
 let c_no_curly_error = 1
+
+" Vim autoformat
+let g:autoformat_remove_trailing_spaces = 0
