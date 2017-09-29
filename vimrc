@@ -218,3 +218,14 @@ let c_no_curly_error = 1
 
 " Vim autoformat
 let g:autoformat_remove_trailing_spaces = 0
+let g:formatters_python = ['yapf']
+
+" YCM
+let g:ycm_use_ultisnips_completer = 1
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+let g:ycm_complete_in_comments = 1 " Completion in comments
+let g:ycm_complete_in_strings = 1 " Completion in string
