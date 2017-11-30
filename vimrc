@@ -61,9 +61,9 @@ set cinoptions=g1,h1,N-s,(0,W4,l1
 set expandtab
 set smarttab
 set shiftround
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
@@ -218,6 +218,8 @@ let c_no_curly_error = 1
 
 " Vim autoformat
 let g:autoformat_remove_trailing_spaces = 0
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
 let g:formatters_python = ['yapf']
 
 " YCM
