@@ -8,7 +8,7 @@ if has("win32") || has("win16")
 elseif has("mac") || has("macunix")
   set guifont=Monaco\ for\ Powerline:h11
 else
- set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 endif
 
 highlight SignColumn guibg=#000000
