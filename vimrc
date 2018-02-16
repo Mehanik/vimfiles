@@ -231,3 +231,9 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
 let g:ycm_complete_in_comments = 1 " Completion in comments
 let g:ycm_complete_in_strings = 1 " Completion in string
+
+
+" Check Python files with flake8 and pylint.
+let b:ale_linters = ['flake8']
+" Fix Python files with autopep8 and yapf.
+let b:ale_fixers = ['yapf']
