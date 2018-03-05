@@ -204,9 +204,7 @@ autocmd FileType c,cpp,java,php,arduino,python autocmd BufWritePre <buffer> %s/\
 
 " GitGutter
 set signcolumn=yes
-let g:gitgutter_realtime = 1
-let g:gitgutter_eager = 1
-set updatetime=250
+set updatetime=1000
 
 " Disable automatically commetn insertion
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
@@ -237,3 +235,6 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 let b:ale_linters = ['flake8']
 " Fix Python files with autopep8 and yapf.
 let b:ale_fixers = ['yapf']
+
+"NERDcommenter
+let NERDDefaultAlign="left"
