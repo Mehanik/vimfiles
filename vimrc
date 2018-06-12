@@ -235,6 +235,7 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 let b:ale_linters = ['flake8']
 " Fix Python files with autopep8 and yapf.
 let b:ale_fixers = ['yapf']
+let g:ale_set_highlights = 0
 
 "NERDcommenter
 let NERDDefaultAlign="left"
