@@ -70,3 +70,9 @@
 [submodule "bundle/vim-python-pep8-indent"]
 	path = bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule "bundle/vim-illuminate"]
+	path = bundle/vim-illuminate
+	url = git@github.com:RRethy/vim-illuminate.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale.git
