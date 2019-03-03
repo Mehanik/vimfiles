@@ -132,9 +132,9 @@ let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Always show statusline
-if has("gui_running")
-  let g:airline_powerline_fonts = 1
-endif
+"if has("gui_running")
+let g:airline_powerline_fonts = 1
+"endif
 set laststatus=2
 set noshowmode
 set ttimeout
