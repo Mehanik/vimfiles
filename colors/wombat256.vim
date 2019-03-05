@@ -241,7 +241,7 @@ call <SID>X("CursorColumn",	"",			"2d2d2d",	"")
 			"Question
 			"IncSearch
 call <SID>X("Search",		"444444",	"af87d7",	"")
-call <SID>X("MatchParen",	"ecee90",	"857b6f",	"bold")
+call <SID>X("MatchParen",	"",	"444444",	"")
 call <SID>X("SpecialKey",	"6c6c6c",	"2d2d2d",	"none")
 call <SID>X("Visual",		"ecee90",	"597418",	"none")
 call <SID>X("LineNr",		"857b6f",	"121212",	"none")
