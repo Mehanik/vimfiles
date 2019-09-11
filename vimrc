@@ -216,6 +216,8 @@ let b:ale_linters = ['flake8']
 " Fix Python files with autopep8 and yapf.
 let b:ale_fixers = ['yapf']
 let g:ale_set_highlights = 0
+" workaround for cursor disappear
+let g:ale_echo_cursor = 0
 
 "NERDcommenter
 let NERDDefaultAlign="left"
@@ -228,3 +230,4 @@ set scrolloff=10
 
 " turn relative line numbers on 
 set relativenumber
+
