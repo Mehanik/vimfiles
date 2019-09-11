@@ -217,7 +217,7 @@ let b:ale_linters = ['flake8']
 let b:ale_fixers = ['yapf']
 let g:ale_set_highlights = 0
 " workaround for cursor disappear
-let g:ale_echo_cursor = 0
+"let g:ale_echo_cursor = 0
 
 "NERDcommenter
 let NERDDefaultAlign="left"
