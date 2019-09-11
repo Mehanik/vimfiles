@@ -235,3 +235,6 @@ let g:ale_set_highlights = 0
 
 "NERDcommenter
 let NERDDefaultAlign="left"
+
+" highlight a word with * without moving cursor
+nnoremap * :let @/ = '\<'.expand('<cword>').'\>'\|set hlsearch<C-M>
