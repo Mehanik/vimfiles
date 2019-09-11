@@ -202,13 +202,6 @@ set sessionoptions+=resize,winpos
 " Automatically removing all trailing whitespace
 autocmd FileType c,cpp,java,php,arduino,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
-" GitGutter
-set signcolumn=yes
-set updatetime=1000
-highlight GitGutterAdd    guifg=#009900 guibg=Black ctermfg=2 ctermbg=16
-highlight GitGutterChange guifg=#bbbb00 guibg=Black ctermfg=3 ctermbg=16
-highlight GitGutterDelete guifg=#ff2222 guibg=Black ctermfg=1 ctermbg=16
-
 " Disable automatically commetn insertion
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
