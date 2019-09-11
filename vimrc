@@ -5,16 +5,13 @@ set backspace=indent,eol,start	" more powerful backspacing
 
 " Now we set some defaults for the editor
 set history=500		" keep 500 lines of command line history
-set ruler		" show the cursor position all the time
+"set ruler		" show the cursor position all the time
 
 " modelines have historically been a source of security/resource
 " vulnerabilities -- disable by default, even when 'nocompatible' is set
 set nomodeline
 
 execute pathogen#infect()
-"
-" Enable matchit macros
-runtime macros/matchit.vim
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
@@ -34,7 +31,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-set background=dark
+"set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -72,7 +69,6 @@ if has("autocmd")
 endif
 
 set nu!
-"set ofu=syntaxcomplete#Complete
 set helplang=en
 
 "set autochdir " always switch to the current file directory
@@ -95,7 +91,7 @@ endif
 
 if exists('+colorcolumn')
   set colorcolumn=120
-  highlight ColorColumn ctermbg=0
+  highlight ColorColumn ctermbg=236
 endif
 
 " Arduino Syntax highlighting
@@ -124,8 +120,26 @@ if has("win32") || has("win16")
 endif
 
 let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd  ctermbg=0
-hi IndentGuidesEven ctermbg=0
+hi IndentGuidesOdd  ctermbg=236
+hi IndentGuidesEven ctermbg=236
+highlight SignColumn guibg=#000000
+
+" highlight
+highlight SignColumn ctermbg=16
+
+highlight link SignifySignAdd DiffAdd
+highlight link SignifySignChange DiffChange
+highlight link SignifySignDelete DiffDelete
+
+" highlight lines in Sy and vimdiff etc.)
+highlight DiffAdd ctermbg=34
+highlight DiffDelete ctermbg=196
+highlight DiffChange ctermbg=220
+"
+
+highlight link SignifySignAdd DiffAdd
+highlight link SignifySignChange DiffChange
+highlight link SignifySignDelete DiffDelete
 
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
@@ -146,36 +160,6 @@ endif
 
 " quick directory change
 nnoremap <leader>cd :cd %:p:h<CR>
-
-" Easy-align
-let g:easy_align_delimiters = {
-      \ '>': { 'pattern': '>>\|=>\|>' },
-      \ '/': { 'pattern': '//\+\|/\*\|\*/', 'ignore_groups': ['String'], 'ignore_unmatched': 0 },
-      \ '#': { 'pattern': '#\+', 'ignore_groups': ['String'], 'delimiter_align': 'l', 'ignore_unmatched': 0 },
-      \ ']': {
-      \     'pattern':       '[[\]]',
-      \     'left_margin':   0,
-      \     'right_margin':  0,
-      \     'stick_to_left': 0
-      \   },
-      \ ')': {
-      \     'pattern':       '[()]',
-      \     'left_margin':   0,
-      \     'right_margin':  0,
-      \     'stick_to_left': 0
-      \   },
-      \ 'd': {
-      \     'pattern': ' \(\S\+\s*[;=]\)\@=',
-      \     'left_margin': 0,
-      \     'right_margin': 0
-      \   }
-      \ }
-
-" Start interactive EasyAlign with a Vim movement
-vmap <Leader>a <Plug>(EasyAlign)
-
-" Start interactive EasyAlign with a Vim movement
-nmap <Leader>a <Plug>(EasyAlign)
 
 "au FileType python setl shiftwidth=2 tabstop=2
 
@@ -238,3 +222,9 @@ let NERDDefaultAlign="left"
 
 " highlight a word with * without moving cursor
 nnoremap * :let @/ = '\<'.expand('<cword>').'\>'\|set hlsearch<C-M>
+
+" scroll offset
+set scrolloff=10
+
+" turn relative line numbers on 
+set relativenumber
