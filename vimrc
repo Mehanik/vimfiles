@@ -94,7 +94,7 @@ else
 endif
 
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=120
   highlight ColorColumn ctermbg=0
 endif
 
@@ -242,7 +242,3 @@ let g:ale_set_highlights = 0
 
 "NERDcommenter
 let NERDDefaultAlign="left"
-
-"vim-iluminate
-hi! link illuminatedWord MatchParen
-let g:Illuminate_delay = 0
