@@ -91,7 +91,6 @@ endif
 
 if exists('+colorcolumn')
   set colorcolumn=120
-  highlight ColorColumn ctermbg=236
 endif
 
 " Arduino Syntax highlighting
@@ -122,24 +121,9 @@ endif
 let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd  ctermbg=236
 hi IndentGuidesEven ctermbg=236
-highlight SignColumn guibg=#000000
 
 " highlight
-highlight SignColumn ctermbg=16
-
-highlight link SignifySignAdd DiffAdd
-highlight link SignifySignChange DiffChange
-highlight link SignifySignDelete DiffDelete
-
-" highlight lines in Sy and vimdiff etc.)
-highlight DiffAdd ctermbg=34
-highlight DiffDelete ctermbg=196
-highlight DiffChange ctermbg=220
-"
-
-highlight link SignifySignAdd DiffAdd
-highlight link SignifySignChange DiffChange
-highlight link SignifySignDelete DiffDelete
+highlight SignColumn ctermbg=232 guibg=#000000
 
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
@@ -231,3 +215,6 @@ set scrolloff=10
 " turn relative line numbers on 
 set relativenumber
 
+" GitGutter
+set signcolumn=yes
+set updatetime=1000

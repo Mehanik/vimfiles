@@ -28,6 +28,7 @@ hi iCursor              guifg=Black         guibg=White
 hi Normal 		guifg=#f6f3e8 guibg=#242424 gui=bold
 hi NonText 		guifg=#808080 guibg=#303030 gui=bold
 hi LineNr 		guifg=#857b6f guibg=#000000 gui=bold
+hi CursorLineNr	 guibg=#000000 gui=bold
 hi StatusLine 	guifg=#f6f3e8 guibg=#444444 gui=italic
 hi StatusLineNC guifg=#857b6f guibg=#444444 gui=bold
 hi VertSplit 	guifg=#444444 guibg=#444444 gui=bold
@@ -55,3 +56,12 @@ hi ColorColumn guifg=#f6f3e8 guibg=#303030 gui=bold
 let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd  guifg=#808080 guibg=#303030 
 hi IndentGuidesEven guifg=#808080 guibg=#303030 
+
+" highlight lines in Sy and vimdiff etc.)
+highlight DiffAdd guifg=#009900 guibg=Black
+highlight DiffDelete guifg=#bbbb00 guibg=Black
+highlight DiffChange guifg=#ff2222 guibg=Black
+
+highlight link GitGutterAdd    DiffAdd
+highlight link GitGutterChange DiffChange
+highlight link GitGutterDelete DiffDelete

@@ -14,11 +14,11 @@ endif
 
 highlight SignColumn guibg=#000000
 
-highlight link SignifySignAdd DiffAdd
-highlight link SignifySignChange DiffChange
-highlight link SignifySignDelete DiffDelete
+"highlight link SignifySignAdd DiffAdd
+"highlight link SignifySignChange DiffChange
+"highlight link SignifySignDelete DiffDelete
 
-" highlight lines in Sy and vimdiff etc.)
-highlight DiffAdd guifg=#95e454     guibg=#000000 gui=Bold
-highlight DiffDelete guifg=#df5f00  guibg=#000000 gui=Bold
-highlight DiffChange guifg=yellow    guibg=#000000 gui=Bold
+"" highlight lines in Sy and vimdiff etc.)
+"highlight DiffAdd guifg=#95e454     guibg=#000000 gui=Bold
+"highlight DiffDelete guifg=#df5f00  guibg=#000000 gui=Bold
+"highlight DiffChange guifg=yellow    guibg=#000000 gui=Bold
