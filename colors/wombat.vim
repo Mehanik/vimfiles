@@ -59,8 +59,8 @@ hi IndentGuidesEven guifg=#808080 guibg=#303030
 
 " highlight lines in Sy and vimdiff etc.)
 highlight DiffAdd guifg=#009900 guibg=Black
-highlight DiffDelete guifg=#bbbb00 guibg=Black
-highlight DiffChange guifg=#ff2222 guibg=Black
+highlight DiffDelete guifg=#ff2222 guibg=Black
+highlight DiffChange guifg=#bbbb00 guibg=Black
 
 highlight link GitGutterAdd    DiffAdd
 highlight link GitGutterChange DiffChange
