@@ -182,7 +182,7 @@ let c_no_curly_error = 1
 let g:autoformat_remove_trailing_spaces = 0
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
-let g:formatters_python = ['yapf']
+let g:formatters_python = ['black']
 
 " YCM
 let g:ycm_use_ultisnips_completer = 1
@@ -197,8 +197,8 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 
 " Check Python files with flake8 and pylint.
 let b:ale_linters = ['flake8']
-" Fix Python files with autopep8 and yapf.
-let b:ale_fixers = ['yapf']
+" Fix Python files with black
+let b:ale_fixers = ['black']
 let g:ale_set_highlights = 0
 " workaround for cursor disappear
 "let g:ale_echo_cursor = 0
