@@ -29,6 +29,10 @@ if has("syntax")
   syntax on
 endif
 
+" Python path
+"let g:python3_host_prog=expand('/usr/bin/python3.6')
+"let g:python_host_prog=expand('/usr/bin/python2.7')
+
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 "set background=dark
@@ -184,17 +188,6 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:formatters_python = ['black']
 
-" YCM
-let g:ycm_use_ultisnips_completer = 1
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string
-
-
 " Check Python files with flake8 and pylint.
 let b:ale_linters = ['flake8']
 " Fix Python files with black
@@ -218,3 +211,7 @@ set relativenumber
 " GitGutter
 set signcolumn=yes
 set updatetime=1000
+
+" Deoplate
+let g:deoplete#enable_at_startup = 1
+"let g:deoplete#sources#jedi#show_docstring = 1
