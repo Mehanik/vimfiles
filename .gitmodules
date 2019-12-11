@@ -66,7 +66,7 @@
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
 [submodule "bundle/ale"]
 	path = bundle/ale
-	url = git@github.com:w0rp/ale.git
+	url = https://github.com/w0rp/ale.git
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim
@@ -75,13 +75,13 @@
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-isort"]
 	path = bundle/vim-isort
-	url = git@github.com:fisadev/vim-isort.git
+	url = https://github.com/fisadev/vim-isort.git
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
-	url = git@github.com:Shougo/deoplete.nvim.git
+	url = https://github.com/Shougo/deoplete.nvim.git
 [submodule "bundle/vim-hug-neovim-rpc"]
 	path = bundle/vim-hug-neovim-rpc
-	url = git@github.com:roxma/vim-hug-neovim-rpc.git
+	url = https://github.com/roxma/vim-hug-neovim-rpc.git
 [submodule "bundle/nvim-yarp"]
 	path = bundle/nvim-yarp
-	url = git@github.com:roxma/nvim-yarp.git
+	url = https://github.com/roxma/nvim-yarp.git
