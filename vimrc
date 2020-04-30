@@ -188,14 +188,6 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:formatters_python = ['black']
 
-" Check Python files with flake8 and pylint.
-let b:ale_linters = ['flake8']
-" Fix Python files with black
-let b:ale_fixers = ['black']
-let g:ale_set_highlights = 0
-" workaround for cursor disappear
-"let g:ale_echo_cursor = 0
-
 "NERDcommenter
 let NERDDefaultAlign="left"
 
