@@ -1,51 +1,27 @@
-[submodule "bundle/jedi-vim"]
-	path = bundle/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/vim-lawrencium"]
-	path = bundle/vim-lawrencium
-	url = https://github.com/ludovicchabant/vim-lawrencium.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/vim-easy-align"]
 	path = bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
-[submodule "bundle/systemverilog.vim"]
-	path = bundle/systemverilog.vim
-	url = git://github.com/nachumk/systemverilog.vim
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
-[submodule "bundle/cpp-syntax"]
-	path = bundle/cpp-syntax
-	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "bundle/CamelCaseMotion"]
 	path = bundle/CamelCaseMotion
 	url = https://github.com/bkad/CamelCaseMotion.git
-[submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
 [submodule "bundle/vim-airline-themes"]
   path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
@@ -58,24 +34,18 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
-[submodule "bundle/vim-autoformat"]
-	path = bundle/vim-autoformat
-	url = https://github.com/Chiel92/vim-autoformat.git
 [submodule "bundle/vim-python-pep8-indent"]
 	path = bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = https://github.com/w0rp/ale.git
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "bundle/vim-isort"]
-	path = bundle/vim-isort
-	url = https://github.com/fisadev/vim-isort.git
 [submodule "bundle/vim-jsonnet"]
 	path = bundle/vim-jsonnet
 	url = git@github.com:google/vim-jsonnet.git
+[submodule "bundle/coc.nvim"]
+	path = bundle/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
