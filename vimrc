@@ -164,7 +164,7 @@ set wildmenu
 set wildmode=list:longest,full
 
 "CamelCaseMotion
-call camelcasemotion#CreateMotionMappings('<leader>')
+let g:camelcasemotion_key = '<leader>'
 
 "vim-session
 let g:session_autosave = 'yes'
