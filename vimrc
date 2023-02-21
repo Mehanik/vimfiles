@@ -152,9 +152,9 @@ nnoremap <leader>cd :cd %:p:h<CR>
 "au FileType python setl shiftwidth=2 tabstop=2
 
 " Unisnip
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+"let g:UltiSnipsExpandTrigger="<Tab>"
+"let g:UltiSnipsJumpForwardTrigger="<Tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Completion menu options
 set completeopt=longest,menuone
