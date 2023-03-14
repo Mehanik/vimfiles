@@ -122,17 +122,6 @@ if has("win32") || has("win16")
   source $VIMRUNTIME/menu.vim
 endif
 
-let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd  ctermbg=236
-hi IndentGuidesEven ctermbg=236
-
-" highlight
-highlight SignColumn ctermbg=232 guibg=#000000
-
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
-let g:indent_guides_enable_on_vim_startup = 1
-
 " Always show statusline
 "if has("gui_running")
 let g:airline_powerline_fonts = 1
@@ -381,3 +370,16 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Use <leader>x for convert visual selected code to snippet
 xmap <leader>x  <Plug>(coc-convert-snippet)
+
+" indent_blankline
+highlight IndentBlanklineChar ctermbg=235
+let g:indent_blankline_show_first_indent_level = v:false
+
+lua <<EOF
+vim.opt.list = true
+
+require("indent_blankline").setup {
+    char = " ",
+}
+EOF
+

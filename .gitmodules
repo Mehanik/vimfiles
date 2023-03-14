@@ -1,18 +1,9 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/vim-easy-align"]
-	path = bundle/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
@@ -22,15 +13,9 @@
 [submodule "bundle/vim-airline-themes"]
   path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "bundle/vim-misc"]
-	path = bundle/vim-misc
-	url = https://github.com/xolox/vim-misc.git
 [submodule "bundle/vim-bbye"]
 	path = bundle/vim-bbye
 	url = https://github.com/moll/vim-bbye
-[submodule "bundle/vim-cpp-enhanced-highlight"]
-	path = bundle/vim-cpp-enhanced-highlight
-	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim
@@ -46,3 +31,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/indent-blankline.nvim"]
+	path = bundle/indent-blankline.nvim
+	url = https://github.com/lukas-reineke/indent-blankline.nvim.git
