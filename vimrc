@@ -369,15 +369,8 @@ xmap <leader>x  <Plug>(coc-convert-snippet)
 " indent_blankline
 highlight IndentBlanklineChar ctermbg=235
 let g:indent_blankline_show_first_indent_level = v:false
-
-lua <<EOF
-vim.opt.list = true
-
-require("indent_blankline").setup {
-    char = " ",
-}
-EOF
+let g:indent_blankline_char = " "
 
 " Vista
 let g:vista_default_executive = "coc"
-"let g:vista#renderer#enable_icon = 0
+let g:vista_ignore_kinds = ['Variable']
