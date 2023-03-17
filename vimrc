@@ -377,8 +377,3 @@ xmap <leader>x  <Plug>(coc-convert-snippet)
 highlight IndentBlanklineChar ctermbg=235
 let g:indent_blankline_show_first_indent_level = v:false
 let g:indent_blankline_char = " "
-
-" Vista
-let g:vista_default_executive = "coc"
-let g:vista_ignore_kinds = ['Variable']
-let g:airline#extensions#vista#enabled = 0
