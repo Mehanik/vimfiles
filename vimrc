@@ -125,6 +125,13 @@ endif
 " Always show statusline
 "if has("gui_running")
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#hunks#enabled = 1
+let g:airline#extensions#branch#enabled = 0
+
+let g:airline_section_y=''
+"let g:airline_skip_empty_sections = 1
+let g:airline_section_z = '%3l/%L:%3v'
+
 "endif
 set laststatus=2
 set noshowmode
@@ -374,3 +381,4 @@ let g:indent_blankline_char = " "
 " Vista
 let g:vista_default_executive = "coc"
 let g:vista_ignore_kinds = ['Variable']
+let g:airline#extensions#vista#enabled = 0

@@ -270,8 +270,8 @@ call <SID>X("ColorColumn",		"f6f3e8",	"303030",			"bold")
 call <SID>X("IndentGuidesOdd",		"808080",	"303030",			"")
 call <SID>X("IndentGuidesOdd",		"808080",	"303030",			"")
 call <SID>X("DiffAdd",		"009900",	"000000",			"")
-call <SID>X("DiffDelete",		"bbbb00",	"000000",			"")
-call <SID>X("DiffChange",		"ff2222",	"000000",			"")
+call <SID>X("DiffDelete",		"ff2222",	"000000",			"")
+call <SID>X("DiffChange",		"bbbb00",	"000000",			"")
 highlight link GitGutterAdd    DiffAdd
 highlight link GitGutterChange DiffChange
 highlight link GitGutterDelete DiffDelete
