@@ -3,5 +3,17 @@
   "python.formatting.provider": "black",
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
-  "coc.preferences.currentFunctionSymbolAutoUpdate": true
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "cSpell.userWords": [
+    "Evgeny",
+    "Frobenius",
+    "Mikhantyev",
+    "dtype",
+    "gelu",
+    "onnx",
+    "pooler",
+    "pytorch",
+    "relu",
+    "silu"
+  ]
 
