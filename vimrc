@@ -364,7 +364,21 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " Use <leader>x for convert visual selected code to snippet
 xmap <leader>x  <Plug>(coc-convert-snippet)
 
-" indent_blankline
-highlight IndentBlanklineChar ctermbg=235
-let g:indent_blankline_show_first_indent_level = v:false
-let g:indent_blankline_char = " "
+" indent blankline
+highlight IndentBlanklineChar guifg=#303030 guibg=#242424  gui=bold
+
+lua << EOF
+
+local highlight = {
+    "IndentBlanklineChar"
+}
+require("ibl").setup {
+    indent = { highlight = highlight, char = "█" },
+    whitespace = {
+        highlight = highlight,
+        remove_blankline_trail = false,
+    },
+    scope = { enabled = false },
+}
+
+EOF
