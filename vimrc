@@ -82,16 +82,7 @@ set hidden " you can change buffers without saving
 "au FocusLost * :wa
 "
 
-if !has("gui_running")
-  set t_Co=256
-  color wombat256
-  hi Pmenu      ctermfg=10 ctermbg=Darkgray cterm=None
-  hi PmenuSel   ctermfg=White   ctermbg=Darkgray cterm=Bold
-  hi PmenuSbar  ctermbg=Cyan    guibg=Cyan
-  hi PmenuThumb ctermfg=White   guifg=White
-else
-  color wombat
-endif
+colorscheme wombat
 
 if exists('+colorcolumn')
   set colorcolumn=120
