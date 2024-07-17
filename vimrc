@@ -82,7 +82,15 @@ set hidden " you can change buffers without saving
 "au FocusLost * :wa
 "
 
-colorscheme wombat
+"set notermguicolors
+"set t_Co=256
+"color wombat256
+"hi Pmenu      ctermfg=10 ctermbg=Darkgray cterm=None
+"hi PmenuSel   ctermfg=White   ctermbg=Darkgray cterm=Bold
+"hi PmenuSbar  ctermbg=Cyan    guibg=Cyan
+"hi PmenuThumb ctermfg=White   guifg=White
+
+color wombat
 
 if exists('+colorcolumn')
   set colorcolumn=120
@@ -365,17 +373,21 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 xmap <leader>x  <Plug>(coc-convert-snippet)
 
 " indent blankline
-highlight IndentBlanklineChar guifg=#303030 guibg=#242424  gui=bold
+highlight IndentBlanklineChar guibg=#303030
 
 lua << EOF
 
-local highlight = {
+local highlight_indent = {
     "IndentBlanklineChar"
 }
+
+local highlight_whitespace = {
+    "Normal"
+}
 require("ibl").setup {
-    indent = { highlight = highlight, char = "█" },
+    indent = { highlight = highlight_indent, char = " " },
     whitespace = {
-        highlight = highlight,
+        highlight = highlight_whitespace,
         remove_blankline_trail = false,
     },
     scope = { enabled = false },
