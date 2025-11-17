@@ -50,4 +50,7 @@ require("lazy").setup({
       },
     },
   },
+  git = {
+    timeout = 600, -- seconds
+  },
 })
