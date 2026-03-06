@@ -16,3 +16,8 @@ vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h", { desc = "Move to left window"
 vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j", { desc = "Move to window below" })
 vim.keymap.set("t", "<C-k>", "<C-\\><C-n><C-w>k", { desc = "Move to window above" })
 vim.keymap.set("t", "<C-l>", "<C-\\><C-n><C-w>l", { desc = "Move to right window" })
+
+-- Forward Shift+Enter to terminal apps (e.g. Claude Code newline)
+vim.keymap.set("t", "<S-CR>", function()
+  vim.fn.chansend(vim.bo.channel, "\x1b[13;2u")
+end, { noremap = true, desc = "Send Shift+Enter to terminal" })
