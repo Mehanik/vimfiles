@@ -23,6 +23,14 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
+-- Auto-enter insert mode when switching to a terminal window
+vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
+  pattern = "term://*",
+  callback = function()
+    vim.cmd("startinsert")
+  end,
+})
+
 -- Reload files changed by Claude Code (or other tools) in embedded terminal
 vim.api.nvim_create_autocmd({ "TermLeave", "BufEnter" }, {
   callback = function()
