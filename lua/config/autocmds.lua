@@ -15,6 +15,14 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Prevent terminal windows from being resized when other windows close
+vim.api.nvim_create_autocmd("TermOpen", {
+  callback = function()
+    vim.wo.winfixheight = true
+    vim.wo.winfixwidth = true
+  end,
+})
+
 -- Reload files changed by Claude Code (or other tools) in embedded terminal
 vim.api.nvim_create_autocmd({ "TermLeave", "BufEnter" }, {
   callback = function()
