@@ -15,14 +15,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Prevent terminal windows from being resized when other windows close
-vim.api.nvim_create_autocmd("TermOpen", {
-  callback = function()
-    vim.wo.winfixheight = true
-    vim.wo.winfixwidth = true
-  end,
-})
-
 -- Auto-enter insert mode when switching to a terminal window
 vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
   pattern = "term://*",
